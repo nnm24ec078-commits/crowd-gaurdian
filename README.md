@@ -1,73 +1,25 @@
-# Welcome to your Lovable project
+# Crowd Guardian
 
-## Project info
+Crowd Guardian monitors crowded areas using a camera-to-cloud workflow. Cameras send visual data to the cloud. The cloud service analyzes each frame, estimates crowd density, and marks locations that need attention. Police officers access the data through a login-protected web application. When any location crosses a critical threshold, the system pushes alerts and provides navigation to the affected spot.
 
-**URL**: https://lovable.dev/projects/983d5e54-7353-4bfe-bc1f-c21a732f5b36
+## How It Works
+- Cameras capture visual data and transmit it to the cloud service.  
+- Cloud analysis identifies density levels and flags high-priority zones.  
+- Backend serves processed results to the web application.  
+- Police personnel log in to access the dashboard.  
+- Dashboard displays crowd status and issues alerts.  
+- Navigation guidance directs officers to critical locations.
 
-## How can I edit this code?
+## Tech Stack
+- React  
+- TypeScript  
+- Tailwind CSS  
+- shadcn-ui  
+- Vite  
+- Supabase
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/983d5e54-7353-4bfe-bc1f-c21a732f5b36) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/983d5e54-7353-4bfe-bc1f-c21a732f5b36) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Structure
+- `src/` — frontend logic and UI  
+- `supabase/` — backend configuration  
+- `index.html` — entry point  
+- Config files for TypeScript, Tailwind, and Vite
